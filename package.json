@@ -1,0 +1,12 @@
+{
+    "name": "test",
+    "description": "Introduction to Mountebank",
+    "version": "0.0.1",
+    "license": "UNLICENSED",
+    "scripts": {
+        "mock": "mb --configfile imposters.ejs --loglevel debug"
+    },
+    "dependencies": {
+        "mountebank": "^2.3.3"
+    }
+}
