@@ -1,0 +1,40 @@
+{
+    "predicates": [
+        {
+            "and": [
+                {
+                    "not": {
+                        "or": [
+                            {
+                                "equals": {
+                                    "method": "GET",
+                                    "path": "/test"
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "exists": {
+                        "headers": {
+                            "Authorization": false
+                        }
+                    }
+                }
+            ]
+        }
+    ],
+    "responses": [
+        {
+            "is": {
+                "statusCode": 401,
+                "headers": {
+                    "Content-Type": "application/json"
+                },
+                "body": {
+                    "desc": "Required HTTP Headers — Authorization"
+                }
+            }
+        }
+    ]
+}

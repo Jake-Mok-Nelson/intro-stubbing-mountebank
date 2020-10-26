@@ -1,0 +1,18 @@
+{
+  "predicates": [
+    {
+      "equals": {
+        "method": "GET",
+        "path": "/user"
+      }
+    }
+  ],
+  "responses": [
+    {
+      "is": {
+        "statusCode": 200
+      },
+      "body": {}
+    }
+  ]
+}
